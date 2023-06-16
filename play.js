@@ -1,6 +1,10 @@
-var name = 'Angel';
-var age = 28;
+//const --> se usa para constantes
+const name = 'Angel';
+//let --> se usar para varibles cambiantes, es mas actual que var
+let age = 28;
 var hasHobbies = true;
+
+age = 30;
 
 function sumarizeUser(userName, userAge, userHasHobby) {
     return (
