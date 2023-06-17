@@ -21,14 +21,13 @@ for (let sport of sports) {
   console.log(sport);
 }
 
+//modificar el valor del arrary con una funcion y lo guarda en otro array
 const detail = sports.map((info) => "Sport: " + info);
 
 console.log(detail);
 
-const numeros = [1, 2, 3, 4, 5];
-
-const duplicados = numeros.map(function (numero) {
-  return numero * 2;
-});
-
-console.log(duplicados); // Output: [2, 4, 6, 8, 10]
+//punteros: objetos y arrays son tipo de datos de referencia
+//because the array sports apunta a la direccion y eso no cambia asi se agreguen elementos
+//x eso no da error a pesar de ser const
+sports.push("Badminton");
+console.log(sports);
