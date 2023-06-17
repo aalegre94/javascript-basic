@@ -23,7 +23,6 @@ for (let sport of sports) {
 
 //modificar el valor del arrary con una funcion y lo guarda en otro array
 const detail = sports.map((info) => "Sport: " + info);
-
 console.log(detail);
 
 //punteros: objetos y arrays son tipo de datos de referencia
@@ -31,3 +30,10 @@ console.log(detail);
 //x eso no da error a pesar de ser const
 sports.push("Badminton");
 console.log(sports);
+
+//metodo Spread ... funciona para arrayas y objetos
+const otherArray = [...sports];
+console.log("Areglo copiado");
+console.log(otherArray);
+const otherPerson = { ...person };
+console.log(otherPerson);
