@@ -37,3 +37,20 @@ console.log("Areglo copiado");
 console.log(otherArray);
 const otherPerson = { ...person };
 console.log(otherPerson);
+
+//destructuramiento - aplica a objetos y arrays
+//las varaibles a extraer deben tener los mismos nombres que los atributos
+const printName = ({ name }) => {
+  console.log(name);
+};
+console.log("Destructuracion 1");
+printName(person);
+
+console.log("Destructuracion 2");
+const { name, age } = person;
+console.log(name, age);
+
+//destruc de arrays
+console.log("Destructuracion de arrays");
+const [sport1, sport2, sport3, sport4, sport5, sport6] = sports;
+console.log(sport5);
